@@ -1,5 +1,9 @@
 .env
-vendor
 composer.lock
-app/cache
-app/logs
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+/vendor/
+/bin/*
+!bin/console

@@ -4,6 +4,15 @@
         "symfony/monolog-bundle": "@stable",
         "vlucas/phpdotenv": "@stable"
     },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
     "autoload": {
         "psr-0": { "Acme": "src/" }
     }
