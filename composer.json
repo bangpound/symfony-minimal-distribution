@@ -9,11 +9,24 @@
         "symfony-bin-dir": "bin",
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::clearCache",
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::clearCache",
+            "Symfony\\Bundle\\MinimalBundle\\Composer\\ScriptHandler::installAssets"
+        ]
     },
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "Acme": "src/" }
+        "psr-0": { "": "src/" }
     }
 }

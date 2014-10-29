@@ -1,5 +1,7 @@
 .env
 composer.lock
+/web/bundles/
+/var/bootstrap.php.cache
 /var/cache/*
 /var/logs/*
 !var/cache/.gitkeep
